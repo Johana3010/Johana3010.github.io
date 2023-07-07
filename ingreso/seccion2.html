@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Classify It!</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../img/FAVICON.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="../img/LOGO7.png" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <div class="icono">
+                            <img src="../img/ubicacionB2.png" alt="">
+                        </div>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Zonas</a></li>
+                        <div class="icono">
+                            <img src="../img/hojaBlanca.png" alt="">
+                        </div>
+                        <li class="nav-item"><a class="nav-link" href="plantas.html">Plantas</a></li>
+                        <div class="icono">
+                            <img src="../img/anadir.png" alt="">
+                        </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Añadir
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#addUModal">Añadir administrador</a></li>
+                            </ul>
+                        </li>
+                        <div class="icono">
+                            <img src="../img/accesoB.png" alt="">
+                        </div>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" href="../index.html">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Zona 2</h2>
+                    <h3 style="background-color: white;" class="section-subheading text-muted">Esta zona comprende las jardineras ubicadas entre los edificios B, C y D</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="../img/imgPlantas/nopal.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Opuntia Helleri</div>
+                                <div class="portfolio-caption-subheading text-muted">Tuna o nopal de tuna</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="../img/imgPlantas/strelitzia.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Strilitzia Reginae</div>
+                                <div class="portfolio-caption-subheading text-muted">Ave del paraíso</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="../img/imgPlantas/agave.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Agave tequilana</div>
+                                <div class="portfolio-caption-subheading text-muted">Agave tequilero</div>
+                            </div>
+                        </div>
+                    <!--
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4--
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Lines</div>
+                                <div class="portfolio-caption-subheading text-muted">Branding</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5--
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Southwest</div>
+                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6--
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Window</div>
+                                <div class="portfolio-caption-subheading text-muted">Photography</div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Classify It! 2023</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/UTSOE" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="http://www.utsoe.edu.mx/" aria-label=""><i class="fa-solid fa-globe" style="color: #ffffff;"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a style="color: white;" class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a style="color: white;" class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                  
+                </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal añadir planta popup-->
+        <div class="portfolio-modal modal fade" id="addPModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="modal-body">
+                                    <section class="page-section" id="contact">
+                                        <div class="container">
+                                            <div class="text-center">
+                                                <h2 class="section-heading text-uppercase">Añadir planta</h2>
+                                                <h3 class="section-subheading text-muted">Ingresa los datos de la planta.</h3>
+                                            </div>
+                                            <!-- to get an API token!-->
+                                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                                <div class="row align-items-stretch mb-5">
+                                                    <div>
+                                                        <div class="form-group">
+                                                            <!-- Name input-->
+                                                            <input class="form-control" id="name" type="text" placeholder="Nombre común" data-sb-validations="required" />
+                                                            <div class="invalid-feedback" data-sb-feedback="name:required">El usuario es obligatorio</div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <!-- Email address input-->
+                                                            <input class="form-control" id="sname" type="text" placeholder="Nombre cientifico" data-sb-validations="required" />
+                                                            <div class="invalid-feedback" data-sb-feedback="sname:required">La contraseña es obligatoria</div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <!-- Email address input-->
+                                                            <textarea class="form-control" id="desc" placeholder="Descripción" data-sb-validations="required"></textarea>
+                                                            <div class="invalid-feedback" data-sb-feedback="desc:required">La contraseña es obligatoria</div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <!-- Email address input-->
+                                                            <textarea class="form-control" id="image" placeholder="URL de imagen" data-sb-validations="required"></textarea>
+                                                            <div class="invalid-feedback" data-sb-feedback="image:required">La contraseña es obligatoria</div>
+                                                        </div>
+                                                        <div class="form-rol">
+                                                            <h4>Grado de toxicidad</h4>
+                                                        </div>
+                                                        <div class="form-rol">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="1" checked>
+                                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                                    Nula
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="2">
+                                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                                    Baja
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="3">
+                                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                                    Media
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="4">
+                                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                                    Alta
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="5">
+                                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                                    Muy alta
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al ingresar</div></div>
+                                                <!-- Submit Button-->
+                                                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Añadir</button></div>
+                                            </form>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal añadir usuario popup-->
+        <div class="portfolio-modal modal fade" id="addUModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="modal-body">
+                                    <section class="page-section" id="contact">
+                                        <div class="container">
+                                            <div class="text-center">
+                                                <h2 class="section-heading text-uppercase">Añadir administrador</h2>
+                                                <h3 class="section-subheading text-muted">Ingresa los datos del nuevo administrador</h3>
+                                            </div>
+                                            <!-- to get an API token!-->
+                                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                                <div class="row align-items-stretch mb-5">
+                                                    <div>
+                                                        <div class="form-group">
+                                                            <!-- Name input-->
+                                                            <input class="form-control" id="name" type="text" placeholder="Correo electrónico" data-sb-validations="required" />
+                                                            <div class="invalid-feedback" data-sb-feedback="name:required">El usuario es obligatorio</div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <!-- Email address input-->
+                                                            <input class="form-control" id="password" type="password" placeholder="Contraseña" data-sb-validations="required" />
+                                                            <div class="invalid-feedback" data-sb-feedback="email:required">La contraseña es obligatoria</div>
+                                                        </div>
+                                                        <div class="form-rol">
+                                                            <h3>Permisos</h3>
+                                                        </div>
+                                                        <div class="form-rol">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="1" checked>
+                                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                                    Agregar y editar información de plantas
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-rol">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="2">
+                                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                                    Agregar y editar información de plantas y usuarios
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <!--<div class="form-rol">
+                                                            <select class="form-select">
+                                                                <--<option selected>Permisos</option>--
+                                                                <option value="1">Agregar y editar información de plantas</option>
+                                                                <option value="2">Agregar y editar información de plantas y usuarios</option>
+                                                                <--<option value="3">Tres</option>--
+                                                            </select>
+                                                        </div>-->
+                                                    </div>
+                                                </div>
+                                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al ingresar</div></div>
+                                                <!-- Submit Button-->
+                                                <div class="text-center"><a class="btn btn-primary btn-xl text-uppercase" href="admin.html">Añadir</a></div>
+                                            </form>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Opuntia Helleri</h2>
+                                    <p class="item-intro text-muted"> <strong>Tuna o nopal de tuna</strong></p>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="img-fluid d-block mx-auto" src="../img/imgPlantas/nopal.jpg" alt="..." />
+                                        </div>
+                                    <div class="col-3">
+                                        <p> <strong>Nivel de toxicidad</strong></p>
+                                        <div class="term">
+                                        <img class="img-fluid d-block mx-auto" src="../img/tox/baja.png" alt="..." />
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <p>Crece extendida o erecta y a menudo forma cojines densos con una altura de de 0,7 a 2 metros. 
+                                            Una colonia no se forma normalmente. Los tallos son de color verde amarillento con cladodios oblongos redondos u ovales, 
+                                            de 20 a 37 centímetros de largo, y 10 a 22 de ancho, y de 1,3 a 2,6 cm de gruesas.</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <ul class="list-inline">
+                                            <li>
+                                                <strong>Familia:</strong>
+                                                Cactaceae
+                                            </li>
+                                            <li>
+                                                <strong>Genero:</strong>
+                                                Opuntia
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Strelitzia Reginae</h2>
+                                    <p class="item-intro text-muted"> <strong>Ave del paraíso</strong></p>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="img-fluid d-block mx-auto" src="../img/imgPlantas/strelitzia.jpg" alt="..." />
+                                        </div>
+                                        <div class="col-3">
+                                            <p> <strong>Nivel de toxicidad</strong></p>
+                                            <div class="term">
+                                            <img class="img-fluid d-block mx-auto" src="../img/tox/media.png" alt="..." />
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <p>Planta herbácea rizomatosa, con una altura promedio de 1,2 m. Las hojas de color verde grisáceo tienen largos pecíolos que surgen del rizoma 
+                                                dispuestas dísticamente (en filas enfrentadas de forma alterna). 
+                                                El perigonio está formado por 6 tépalos distribuidos en dos grupos, los tres externos iguales y libres de color naranja; los tres internos, de color azul brillante, 
+                                                desiguales y soldados dos de ellos, el tercero de mayores dimensiones está plegado en forma de flecha rodeando al estilo en forma de nectario. </p>
+                                        </div>
+                                        <div class="col-3">
+                                            <ul class="list-inline">
+                                                <li>
+                                                    <strong>Familia:</strong>
+                                                    Strelitziaceae
+                                                </li>
+                                                <li>
+                                                    <strong>Genero:</strong>
+                                                    Strelitzia
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="../assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Agave Tequilana</h2>
+                                    <p class="item-intro text-muted"> <strong>Agave tequilero</strong> </p>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="img-fluid d-block mx-auto" src="../img/imgPlantas/agave.jpg" alt="..." />
+                                        </div>
+                                        <div class="col-3">
+                                            <p> <strong>Nivel de toxicidad</strong></p>
+                                            <div class="term">
+                                            <img class="img-fluid d-block mx-auto" src="../img/tox/baja.png" alt="..." />
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <p>Este agave es monocárpico, florece solo una vez en su vida y muere tras florecer. 
+                                                La floración se inicia de los 6 a los 15 años de cultivo; la emisión del tallo floral comienza en los meses 
+                                                de febrero a marzo. La planta produce un tallo floral de unos cuantos metros de altura, con numerosas umbelas con flores 
+                                                verdosas ligeramente amarillentas marchitas en antesis (cuando están abiertas). </p>
+                                        </div>
+                                        <div class="col-3">
+                                            <ul class="list-inline">
+                                                <li>
+                                                    <strong>Familia:</strong>
+                                                    Asparagaceae
+                                                </li>
+                                                <li>
+                                                    <strong>Genero:</strong>
+                                                    Agave
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
